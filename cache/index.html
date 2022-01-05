@@ -1,0 +1,489 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/ed62067c9a.js" crossorigin="anonymous"></script>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/colorbox.css">  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="index">
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <header class="contenedor-header">
+    <div class="contenido-header">
+      <div class="social-media">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest-p"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+
+      <div class="info-evento">
+        <div class="fecha">
+          <i class="far fa-calendar-alt"></i>
+          <p> 10-12 DIC</p>
+        </div>
+        <div class="ubicacion">
+          <i class="fas fa-map-marker-alt"></i>
+          <p> Guadalajara, MX</p>
+        </div>
+      </div>
+
+      <h1 class="nombre-sitio">GDLWEBCAMP</h1>
+      <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
+    </div>
+  </header>
+
+  <div class="barra">
+    <div class="contenido-barra">
+
+      <div class="logo">
+        <a href="index.php">
+          <img src="img/logo.svg" alt="logo gdlwebcamp">
+        </a>
+      </div>
+
+      <div class="menu-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navegacion-principal">
+        <a href="conferencia.php">Conferencia</a>
+        <a href="calendario.php">Calendario</a>
+        <a href="invitados.php">Invitados</a>
+        <a href="registro.php">Reservaciones</a>
+      </nav>
+    </div>
+  </div>
+<main>
+  <div class="titulo-seccion seccion">
+    <h2>La mejor conferencia de diseño web en español</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquid minus sit delectus magnam, iste
+      eveniet ex mollitia sed, unde, a laborum culpa maiores omnis quaerat voluptates vitae accusantium aut.</p>
+  </div>
+
+  <div class="programa">
+    <div class="contenedor-video">
+      <video autoplay loop>
+        <!-- poster="img/bg-talleres.jpg" -->
+        <source src="video/video.mp4" type="video/mp4">
+      </video>
+      <source src="video/video.webm" type="video/webm"></video>
+      <source src="video/video.ogv" type="video/ogv"></video>
+    </div>
+
+
+    <div class="contenido-programa" style="max-height: 1000px;">
+      <div class="titulo-seccion">
+        <div class="programa-evento">
+          <h2>Programa del Evento</h2>
+                    <nav class="menu-programa">
+                                        <a href="#seminario"><i class="fas fa-university"></i> Seminario</a>
+                                        <a href="#conferencias"><i class="fas fa-comment"></i> Conferencias</a>
+                                        <a href="#talleres"><i class="fas fa-code"></i> Talleres</a>
+                      </nav>
+
+          
+          
+            
+                              <div id="seminario" class="info-curso ocultar clearfix">
+                                <div class="detalle-evento">
+                  <h3>Dise�o UI y UX para m�viles</h3>
+                  <p><i class="far fa-clock"></i> 10:00:00</p>
+                  <p><i class="fas fa-calendar-alt"></i> 2016-12-09</p>
+                  <p><i class="fas fa-user"></i>
+                    Susan Sanchez</p>
+                </div>
+                            
+                              <div class="detalle-evento">
+                  <h3>Dise�o UI y UX para m�viles</h3>
+                  <p><i class="far fa-clock"></i> 17:00:00</p>
+                  <p><i class="fas fa-calendar-alt"></i> 2016-12-10</p>
+                  <p><i class="fas fa-user"></i>
+                    Harold Garcia</p>
+                </div>
+                                  <a href="calendario.php" class="button float-right">Ver Todos</a>
+                </div>
+                                                
+            
+                              <div id="conferencias" class="info-curso ocultar clearfix">
+                                <div class="detalle-evento">
+                  <h3>Como ser freelancer</h3>
+                  <p><i class="far fa-clock"></i> 10:00:00</p>
+                  <p><i class="fas fa-calendar-alt"></i> 2016-12-09</p>
+                  <p><i class="fas fa-user"></i>
+                    Susan Sanchez</p>
+                </div>
+                            
+                              <div class="detalle-evento">
+                  <h3>Tecnolog�as del Futuro</h3>
+                  <p><i class="far fa-clock"></i> 17:00:00</p>
+                  <p><i class="fas fa-calendar-alt"></i> 2016-12-09</p>
+                  <p><i class="fas fa-user"></i>
+                    Rafael Bautista</p>
+                </div>
+                                  <a href="calendario.php" class="button float-right">Ver Todos</a>
+                </div>
+                                                
+            
+                              <div id="talleres" class="info-curso ocultar clearfix">
+                                <div class="detalle-evento">
+                  <h3>Responsive Web Design</h3>
+                  <p><i class="far fa-clock"></i> 10:00:00</p>
+                  <p><i class="fas fa-calendar-alt"></i> 2016-12-09</p>
+                  <p><i class="fas fa-user"></i>
+                    Rafael Bautista</p>
+                </div>
+                            
+                              <div class="detalle-evento">
+                  <h3>Flexbox</h3>
+                  <p><i class="far fa-clock"></i> 12:00:00</p>
+                  <p><i class="fas fa-calendar-alt"></i> 2016-12-09</p>
+                  <p><i class="fas fa-user"></i>
+                    Shari Herrera</p>
+                </div>
+                                  <a href="calendario.php" class="button float-right">Ver Todos</a>
+                </div>
+                                                
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="titulo-seccion contenedor">
+  
+  <section class="contenedor-invitados titulo-seccion">
+    <h2>Nuestros Invitados</h2>
+    <ul class="lista-invitados">
+      
+      <li class="invitado">
+        <a class="invitado_info" href="#invitado1">
+          <img src="img/invitados/invitado1.jpg" alt="Rafael">
+          <p>Rafael Bautista</p>
+        </a>
+      </li>
+
+      <div style="display:none">
+        <div id="invitado1" class="cbox">
+          <h2>Rafael Bautista</h2>
+          <img src="img/invitados/invitado1.jpg" alt="invitado1.jpg">
+          <p>Sed sagittis hendrerit gravida. Phasellus felis ante, sagittis a pretium nec, malesuada sed augue. Nulla in erat ac augue luctus eleifend. Ut viverra enim lorem, sed imperdiet magna bibendum ut. Proin tincidunt pulvinar orci, ac dignissim nibh semper at. Suspendisse sed varius leo. Aenean vitae dui vestibulum, venenatis tellus vel, malesuada nunc. In vitae odio ligula.</p>
+        </div>
+      </div>
+
+      
+      <li class="invitado">
+        <a class="invitado_info" href="#invitado2">
+          <img src="img/invitados/invitado2.jpg" alt="Shari">
+          <p>Shari Herrera</p>
+        </a>
+      </li>
+
+      <div style="display:none">
+        <div id="invitado2" class="cbox">
+          <h2>Shari Herrera</h2>
+          <img src="img/invitados/invitado2.jpg" alt="invitado2.jpg">
+          <p>Aliquam et posuere ipsum. Curabitur feugiat tellus at purus aliquam tincidunt. Fusce eget hendrerit ex. Maecenas eu nibh id lectus scelerisque dignissim ac nec dui. Morbi malesuada scelerisque purus convallis mollis. Praesent vehicula fringilla nulla eget ultrices. Morbi consectetur arcu eu massa finibus commodo. Pellentesque feugiat vitae lectus at maximus. Etiam volutpat massa at quam tincidunt sodales.</p>
+        </div>
+      </div>
+
+      
+      <li class="invitado">
+        <a class="invitado_info" href="#invitado3">
+          <img src="img/invitados/invitado3.jpg" alt="Gregorio">
+          <p>Gregorio Sanchez</p>
+        </a>
+      </li>
+
+      <div style="display:none">
+        <div id="invitado3" class="cbox">
+          <h2>Gregorio Sanchez</h2>
+          <img src="img/invitados/invitado3.jpg" alt="invitado3.jpg">
+          <p>Morbi malesuada scelerisque purus convallis mollis. Praesent vehicula fringilla nulla eget ultrices. Morbi consectetur arcu eu massa finibus commodo. Pellentesque feugiat vitae lectus at maximus. Etiam volutpat massa at quam tincidunt sodales.</p>
+        </div>
+      </div>
+
+      
+      <li class="invitado">
+        <a class="invitado_info" href="#invitado4">
+          <img src="img/invitados/invitado4.jpg" alt="Susana">
+          <p>Susana Rivera</p>
+        </a>
+      </li>
+
+      <div style="display:none">
+        <div id="invitado4" class="cbox">
+          <h2>Susana Rivera</h2>
+          <img src="img/invitados/invitado4.jpg" alt="invitado4.jpg">
+          <p>Maecenas fringilla pretium ultricies. Aliquam ante dui, sollicitudin elementum rutrum ut, lacinia ut est. Morbi suscipit tincidunt nibh eget pretium. Nam facilisis rutrum nulla, nec elementum velit viverra id. Praesent facilisis ante ligula, eu convallis ex faucibus vitae. Nullam erat libero, gravida sit amet sollicitudin eu, sodales eu enim. Nam luctus vitae quam eu convallis. </p>
+        </div>
+      </div>
+
+      
+      <li class="invitado">
+        <a class="invitado_info" href="#invitado5">
+          <img src="img/invitados/invitado5.jpg" alt="Harold">
+          <p>Harold Garcia</p>
+        </a>
+      </li>
+
+      <div style="display:none">
+        <div id="invitado5" class="cbox">
+          <h2>Harold Garcia</h2>
+          <img src="img/invitados/invitado5.jpg" alt="invitado5.jpg">
+          <p>Praesent facilisis ante ligula, eu convallis ex faucibus vitae. Nullam erat libero, gravida sit amet sollicitudin eu, sodales eu enim. Nam luctus vitae quam eu convallis. Morbi consectetur arcu eu massa finibus commodo. Pellentesque feugiat vitae lectus at maximus. Etiam volutpat massa at quam tincidunt sodales.</p>
+        </div>
+      </div>
+
+      
+      <li class="invitado">
+        <a class="invitado_info" href="#invitado6">
+          <img src="img/invitados/invitado6.jpg" alt="Susan">
+          <p>Susan Sanchez</p>
+        </a>
+      </li>
+
+      <div style="display:none">
+        <div id="invitado6" class="cbox">
+          <h2>Susan Sanchez</h2>
+          <img src="img/invitados/invitado6.jpg" alt="invitado6.jpg">
+          <p>Morbi consequat sodales nisl sed elementum. Sed luctus elit et tortor lobortis consequat. Nullam ullamcorper eros quis commodo congue. Phasellus venenatis enim orci, quis laoreet orci cursus a. Maecenas ac sem at justo ultricies maximus id id sapien. Nulla non dolor nisl.</p>
+        </div>
+      </div>
+
+          </ul>
+  </section>
+
+  </section>
+  <div class="contador parallax">
+    <ul class="resumen-evento">
+      <li>
+        <p class="numero"></p> Invitados
+      </li>
+      <li>
+        <p class="numero"></p> Talleres
+      </li>
+      <li>
+        <p class="numero"></p> Dias
+      </li>
+      <li>
+        <p class="numero"></p> Conferencias
+      </li>
+    </ul>
+  </div>
+
+  <section class="contenedor titulo-seccion">
+    <h2>Precios</h2>
+    <div class="contenedor-precios">
+
+      <div class="tarjeta-precio">
+        <h3>Pase por dia</h3>
+        <p class="numero">$30</p>
+        <ul>
+          <li>Bocadillos Gratis</li>
+          <li>Todas las Conferencias</li>
+          <li>Todos los Talleres</li>
+        </ul>
+        <a href="registro.php" class="button hollow">Comprar</a>
+      </div>
+
+      <div class="tarjeta-precio">
+        <h3>Todos los dias</h3>
+        <p class="numero">$50</p>
+        <ul>
+          <li>Bocadillos Gratis</li>
+          <li>Todas las Conferencias</li>
+          <li>Todos los Talleres</li>
+        </ul>
+        <a href="registro.php" class="button">Comprar</a>
+      </div>
+
+      <div class="tarjeta-precio">
+        <h3>Pase por 2 dias</h3>
+        <p class="numero">$45</p>
+        <ul>
+          <li>Bocadillos Gratis</li>
+          <li>Todas las Conferencias</li>
+          <li>Todos los Talleres</li>
+        </ul>
+        <a href="registro.php" class="button hollow">Comprar</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <div id="mapa" class="mapa"></div>
+
+  <section class="titulo-seccion">
+    <h2>Testimoniales</h2>
+    <div class="contenedor-testimoniales">
+
+      <div class="testimonial">
+        <blockquote>
+          <p>Ut auctor, est non finibus gravida, nisi eros ullamcorper metus, tincidunt malesuada odio orci id
+            neque.
+            Nunc sollicitudin id orci nec ornare Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Etiam semper id nisi ut suscipit.</p>
+          <footer class="info-testimonial">
+            <img src="img/testimonial.jpg" alt="Imagen Testimonial">
+            <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
+          </footer>
+        </blockquote>
+      </div>
+
+      <div class="testimonial">
+        <blockquote>
+          <p>Ut auctor, est non finibus gravida, nisi eros ullamcorper metus, tincidunt malesuada odio orci id
+            neque.
+            Nunc sollicitudin id orci nec ornare Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Etiam semper id nisi ut suscipit.</p>
+          <footer class="info-testimonial">
+            <img src="img/testimonial.jpg" alt="Imagen Testimonial">
+            <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
+          </footer>
+        </blockquote>
+      </div>
+
+      <div class="testimonial">
+        <blockquote>
+          <p>Ut auctor, est non finibus gravida, nisi eros ullamcorper metus, tincidunt malesuada odio orci id
+            neque.
+            Nunc sollicitudin id orci nec ornare Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Etiam semper id nisi ut suscipit.</p>
+          <footer class="info-testimonial">
+            <img src="img/testimonial.jpg" alt="Imagen Testimonial">
+            <cite>Oswaldo Aponte Escobedo <span>Diseñador en @prisma</span></cite>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="newsletter parallax">
+    <div class="contenido-newsletter">
+      <p>Registrate al Newsletter</p>
+      <h3>GDLWEBCAMP</h3>
+      <a href="#" class="button transparent">Registro</a>
+    </div>
+  </div>
+
+  <div class="contenedor-cuenta-regresiva titulo-seccion">
+    <h2>Faltan</h2>
+    <div class="cuenta-regresiva">
+      <ul class="contenido-cuenta-regresiva">
+        <li>
+          <p id="dias" class="numero"></p> dias
+        </li>
+        <li>
+          <p id="horas" class="numero"></p> horas
+        </li>
+        <li>
+          <p id="minutos" class="numero"></p> minutos
+        </li>
+        <li>
+          <p id="segundos" class="numero"></p> segundos
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+<footer class="site-footer">
+
+  <div class="contenido-footer">
+    <div class="footer-informacion">
+      <h3>Sobre <span>gdlwebcamp</span></h3>
+      <p>Aliquam aliquet luctus lacus eget aliquam. Nullam rutrum justo varius nulla eleifend, et venenatis quam
+        imperdiet. Nullam elit risus, aliquet non mattis vel, pharetra vitae ligula. Proin tincidunt viverra lectus, a
+        euismod ipsum feugiat vitae. Nam faucibus urna eget mauris gravida, vel interdum ante consequat. Etiam
+        condimentum risus vitae ipsum fermentum luctus et eleifend sem. Nulla laoreet sed elit ut pharetra. In hac
+        habitasse platea dictumst. Fusce ac bibendum nisl, in consectetur leo</p>
+    </div>
+
+    <div class="ultimos-tweets">
+      <h3>Ultimos <span>Tweets</span></h3>
+      <a class="twitter-timeline" data-height="400" href="https://twitter.com/FL_Allan?ref_src=twsrc%5Etfw">Tweets by
+        FL_Allan</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    <div class="footer-menu">
+      <h3>Redes <span>Sociales</span></h3>
+      <div class="social-media">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest-p"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p></p>
+  </div>
+
+</footer>
+
+
+
+<!-- <script src="js/vendor/modernizr-3.8.0.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+  window.jQuery || document.write(
+    "<script src= 'https: //code.jquery.com/jquery-3.4.1.min.js' integrity = 'sha256 - CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin = 'anonymous' > <\/script>"
+  )
+</script>
+<script src="js/plugins.js"></script>
+<!-- Leaflet -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="anonymous"></script>
+<!-- AnimateNumber -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js" integrity="sha512-WY7Piz2TwYjkLlgxw9DONwf5ixUOBnL3Go+FSdqRxhKlOqx9F+ee/JsablX84YBPLQzUPJsZvV88s8YOJ4S/UA==" crossorigin="anonymous"></script>
+<!-- CountDown -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js" integrity="sha512-lteuRD+aUENrZPTXWFRPTBcDDxIGWe5uu0apPEn+3ZKYDwDaEErIK9rvR0QzUGmUQ55KFE2RqGTVoZsKctGMVw==" crossorigin="anonymous"></script>
+<!-- Lettering -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js" integrity="sha512-9ex1Kp3S7uKHVZmQ44o5qPV6PnP8/kYp8IpUHLDJ+GZ/qpKAqGgEEH7rhYlM4pTOSs/WyHtPubN2UePKTnTSww==" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js" integrity="sha512-DAVSi/Ovew9ZRpBgHs6hJ+EMdj1fVKE+csL7mdf9v7tMbzM1i4c/jAvHE8AhcKYazlFl7M8guWuO3lDNzIA48A==" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="js/cotizar.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function() {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
