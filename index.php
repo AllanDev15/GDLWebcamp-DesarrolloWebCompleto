@@ -1,4 +1,4 @@
-<?php include_once 'includes/templates/header.php'; ?>
+<?php include_once './includes/templates/header.php'; ?>
 
 <main>
   <div class="titulo-seccion seccion">
@@ -24,7 +24,7 @@
           <h2>Programa del Evento</h2>
           <?php
           try {
-            require_once('includes/funciones/bd_conexion.php');
+            require_once('./includes/funciones/bd_conexion.php');
             $sql = "SELECT * FROM categoria_evento";
             $resultado = $con->query($sql);
           } catch (Exception $e) {
@@ -40,7 +40,7 @@
 
           <?php
           try {
-            require_once('includes/funciones/bd_conexion.php');
+            require_once('./includes/funciones/bd_conexion.php');
 
             // Este codigo primero consulta cuantas categorias hay
             $sql = 'SELECT id_categoria FROM categoria_evento';
@@ -68,7 +68,7 @@
               $sql .= ' FROM eventos INNER JOIN categoria_evento ON eventos.id_cat_evento = categoria_evento.id_categoria';
               $sql .= ' INNER JOIN invitados ON eventos.id_inv = invitados.invitado_id AND eventos.id_cat_evento = 3 ORDER BY evento_id LIMIT 2;';*/
             // $res = $con->query($sql);
-          } catch (\Exception $e) {
+          } catch (Exception $e) {
             echo $e->getMessage();
           }
           ?>
@@ -106,7 +106,7 @@
     </div>
   </div>
 
-  <?php include_once 'includes/templates/invitados.php'; ?>
+  <?php include_once './includes/templates/invitados.php'; ?>
 
   <div class="contador parallax">
     <ul class="resumen-evento">
@@ -243,4 +243,4 @@
   </div>
 
 </main>
-<?php include_once 'includes/templates/footer.php'; ?>
+<?php include_once './includes/templates/footer.php'; ?>
