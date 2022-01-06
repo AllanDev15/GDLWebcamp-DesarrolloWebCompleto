@@ -73,7 +73,17 @@
           }
           ?>
 
-          <?php $con->multi_query($sql);
+          <?php
+
+          try {
+            $con->multi_query($sql);
+
+            echo "<pre>";
+            var_dump($con);
+            echo "</pre>";
+          } catch (Exception $e) {
+            echo $e->getMessage();
+          }
           ?>
 
         </div>
