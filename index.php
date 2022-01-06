@@ -73,34 +73,6 @@
           }
           ?>
 
-          <?php $con->multi_query($sql);
-          do {
-            $res = $con->store_result();
-            $row = $res->fetch_all(MYSQLI_ASSOC);
-            $i = 0; ?>
-
-            <?php foreach ($row as $evento) : ?>
-
-              <?php if ($i % 2 == 0) : ?>
-                <div id="<?= strtolower($evento['cat_evento']) ?>" class="info-curso ocultar clearfix">
-                <?php endif; ?>
-                <div class="detalle-evento">
-                  <h3><?= utf8_decode($evento['nombre_evento']) ?></h3>
-                  <p><i class="far fa-clock"></i> <?= $evento['hora_evento'] ?></p>
-                  <p><i class="fas fa-calendar-alt"></i> <?= $evento['fecha_evento'] ?></p>
-                  <p><i class="fas fa-user"></i>
-                    <?php echo $evento['nombre_invitado'] . " " . $evento['apellido_invitado']; ?></p>
-                </div>
-                <?php if ($i % 2 == 1) : ?>
-                  <a href="calendario.php" class="button float-right">Ver Todos</a>
-                </div>
-              <?php endif; ?>
-            <?php
-              $i++;
-            endforeach; ?>
-            <?php $resultado->free(); ?>
-          <?php } while ($con->more_results() && $con->next_result()); ?>
-
         </div>
       </div>
     </div>
