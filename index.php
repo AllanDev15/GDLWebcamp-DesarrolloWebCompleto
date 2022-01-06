@@ -73,6 +73,9 @@
           }
           ?>
 
+          <?php $con->multi_query($sql);
+          ?>
+
         </div>
       </div>
     </div>
