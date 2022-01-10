@@ -99,9 +99,7 @@
           $eventos_dias = array();
           while ($eventos = $resultado->fetch_assoc()) {
             $fecha = $eventos['fecha_evento'];
-            setlocale(LC_ALL, 'es-MX');
             $dia_semana = strftime("%A", strtotime($fecha));
-            $dia_semana = utf8_encode($dia_semana);
 
             $categoria = $eventos['cat_evento'];
             $dia = array(
@@ -132,7 +130,7 @@
                     <label>
                       <input type="checkbox" name="registro[]" id="<?= $evento['id'] ?>" value="<?= $evento['id'] ?>">
                       <time><?= $evento['hora'] ?></time>
-                      <?= $evento['nombre_evento'] ?> <br>
+                      <?= utf8_encode($evento['nombre_evento']) ?> <br>
                       <span class="autor">Autor: <?= $evento['nombre_invitado'] . " " . $evento['apellido_invitado'] ?></span>
                     </label>
                   <?php endforeach; ?>
@@ -194,7 +192,7 @@
     </div>
     <div class="contenedor pay-example-info">
       <div class="caja">
-        <p>El pago, es ficticio puedes probarlo con la siguiente cuenta de ejemplo: </p>
+        <p>El pago es ficticio, puedes probarlo con la siguiente cuenta de ejemplo: </p>
         <p>Email: <span>sb-fnudu2734329@personal.example.com</span></p>
         <p>Contraseña: <span>CrI77R@w</span> </p>
       </div>

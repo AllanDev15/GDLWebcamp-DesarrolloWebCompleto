@@ -47,7 +47,8 @@
             $ids = $con->query($sql);
 
             $sql = " ";
-            while ($idCategoria = $ids->fetch_assoc()['id_categoria']) :
+            while ($id = $ids->fetch_assoc()) :
+              $idCategoria = $id['id_categoria'];
               // Aqui creamos varias consultar separadas por ';' para cada tipo de categoria existente y/o creada
               $sql = "SELECT evento_id, nombre_evento, fecha_evento, hora_evento, cat_evento, icono, nombre_invitado, apellido_invitado
                 FROM eventos INNER JOIN categoria_evento ON eventos.id_cat_evento = categoria_evento.id_categoria
@@ -57,12 +58,13 @@
               $i = 0;
           ?>
 
-              <?php while ($evento = $res->fetch_assoc()) :
+              <?php
+              while ($evento = $res->fetch_assoc()) :
                 if ($i % 2 == 0) : ?>
                   <div id="<?= strtolower($evento['cat_evento']) ?>" class="info-curso ocultar clearfix">
                   <?php endif; ?>
                   <div class="detalle-evento">
-                    <h3><?= utf8_decode($evento['nombre_evento']) ?></h3>
+                    <h3><?= utf8_encode($evento['nombre_evento']) ?></h3>
                     <p><i class="far fa-clock"></i> <?= $evento['hora_evento'] ?></p>
                     <p><i class="fas fa-calendar-alt"></i> <?= $evento['fecha_evento'] ?></p>
                     <p><i class="fas fa-user"></i>
