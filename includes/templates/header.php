@@ -8,16 +8,16 @@ setlocale(LC_ALL, 'es_ES');
 // setlocale(LC_TIME, 'spanish');
 
 // Definir archivo para cachear (puede ser .php también)
-$archivoCache = 'cache/' . $pagina . '.html';
+// $archivoCache = 'cache/' . $pagina . '.html';
 // Cuanto tiempo deberá estar este archivo almacenado
-$tiempo = 18000;
+// $tiempo = 18000;
 // Checar que el archivo exista, el tiempo sea el adecuado y muestralo
-if (file_exists($archivoCache) && time() - $tiempo < filemtime($archivoCache)) {
-  include($archivoCache);
-  exit;
-}
+// if (file_exists($archivoCache) && time() - $tiempo < filemtime($archivoCache)) {
+//   include($archivoCache);
+//   exit;
+// }
 // Si el archivo no existe, o el tiempo de cacheo ya se venció genera uno nuevo
-ob_start();
+// ob_start();
 ?>
 <!doctype html>
 <html class="no-js" lang="">
