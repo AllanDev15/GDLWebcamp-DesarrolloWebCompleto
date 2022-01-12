@@ -17,12 +17,6 @@
         <div class="col-sm-6">
           <h1>Listado de Personas Registradas</h1>
         </div>
-        <div class="col-sm-6">
-          <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Blank Page</li>
-          </ol>
-        </div>
       </div>
     </div><!-- /.container-fluid -->
   </section>
@@ -92,7 +86,7 @@
                       FROM eventos WHERE clave IN ('$talleres')";
                       $resultado_talleres = $con->query($sql_talleres);
                       while($eventos = $resultado_talleres->fetch_assoc()) {
-                        echo $eventos['nombre_evento'] . " " . $eventos['fecha_evento'] . " " . $eventos['hora_evento'] . "<br>";
+                        echo utf8_encode($eventos['nombre_evento']) . " " . $eventos['fecha_evento'] . " " . $eventos['hora_evento'] . "<br>";
                       }
                       ?>
                     </td>

@@ -17,12 +17,6 @@
           <div class="col-sm-6">
             <h1>Listado de Eventos</h1>
           </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
-            </ol>
-          </div>
         </div>
       </div><!-- /.container-fluid -->
     </section>
@@ -65,7 +59,7 @@
                       
                       while($eventos = $resultado->fetch_assoc()): ?>
                         <tr> 
-                          <td><?= $eventos['nombre_evento'] ?></td>
+                          <td><?= utf8_encode($eventos['nombre_evento']) ?></td>
                           <td><?= $eventos['fecha_evento'] ?></td>
                           <td><?= $eventos['hora_evento'] ?></td>
                           <td><?= $eventos['cat_evento'] ?></td>

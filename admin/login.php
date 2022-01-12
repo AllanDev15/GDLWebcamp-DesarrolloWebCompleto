@@ -1,15 +1,15 @@
 <?php session_start();
-  $cerrar_sesion = $_GET['cerrar_sesion'];
-  if($cerrar_sesion) {
-    session_destroy();
-  }
+$cerrar_sesion = $_GET['cerrar_sesion'];
+if ($cerrar_sesion) {
+  session_destroy();
+}
 ?>
 <?php include_once 'funciones/funciones.php' ?>
 <?php include_once 'templates/header.php' ?>
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="login-page">
-    <div class="login-box">
+<!-- Content Wrapper. Contains page content -->
+<div class="login-page">
+  <div class="login-box">
     <div class="login-logo">
       <a href="../index.php"><b>GDL</b>Webcamp</a>
     </div>
@@ -48,9 +48,11 @@
       <!-- /.login-card-body -->
     </div>
   </div>
+  <div class="credentials">
+    <p class="credentials__text">Usuario: <span>admin</span></p>
+    <p class="credentials__text">Password: <span>admin</span></p>
   </div>
-  <!-- /.content-wrapper -->
+</div>
+<!-- /.content-wrapper -->
 
-  <?php include_once 'templates/footer.php' ?>
-
-
+<?php include_once 'templates/footer.php' ?>

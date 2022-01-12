@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 							icon: 'success',
 						});
 						setTimeout(() => {
-							window.location.href = 'admin-area.php';
+							window.location.href = 'dashboard.php';
 						}, 2000);
 					} else {
 						Swal.fire({
