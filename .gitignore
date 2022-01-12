@@ -9,3 +9,4 @@ package-lock.json
 humans.txt
 browserconfig.xml
 robots.txt
+vendor/
