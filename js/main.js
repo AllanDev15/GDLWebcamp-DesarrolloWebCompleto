@@ -7,7 +7,8 @@
     }, 7000);
     alertAdmin.addEventListener('click', (e) => alertAdminContent.classList.toggle('fade'));
     const copyright = document.querySelector('.copyright p');
-    copyright.textContent = 'Todos los derechos reservados GDLWEBCAMP ' + new Date().getFullYear();
+    copyright.innerHTML =
+      'Todos los derechos reservados GDLWEBCAMP ' + new Date().getFullYear() + ' &copy';
     function a() {
       let a;
       const { id: c } = this;
@@ -58,9 +59,10 @@
 })(),
   $(() => {
     document.getElementsByClassName('nombre-sitio') && $('.nombre-sitio').lettering();
-    const a = $(window).height(),
-      b = $('.barra').innerHeight();
+    const a = $(window).height();
+
     $(window).scroll(() => {
+      const b = $('.barra').innerHeight();
       const c = $(window).scrollTop();
       c > a
         ? ($('.barra').addClass('fixed'), $('body').css({ 'margin-top': `${b}px` }))
@@ -68,6 +70,7 @@
     }),
       $('.menu-mobile').on('click', () => {
         $('.navegacion-principal').slideToggle();
+        $('.alert-admin').toggle();
       }),
       $('.menu-programa a:first').addClass('activo'),
       $('.programa-evento .info-curso:first').show(),

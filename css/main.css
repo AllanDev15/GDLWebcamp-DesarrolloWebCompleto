@@ -49,6 +49,12 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f2f2f2;
 }
+html {
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 h3 {
   font-family: 'PT Sans', sans-serif;
   margin: 0;
@@ -207,7 +213,7 @@ h1.nombre-sitio span {
 .logo img {
   width: 200px;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .logo img {
     width: 300px;
   }
@@ -237,7 +243,7 @@ h1.nombre-sitio span {
 .alert-admin {
   position: absolute;
   left: 0px;
-  top: 121px;
+  top: 74px;
   background-color: #353535;
   color: white;
   border: 2px solid #fe4918;
@@ -245,6 +251,11 @@ h1.nombre-sitio span {
   max-width: 302px;
   min-width: 302px;
   overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .alert-admin {
+    top: 121px;
+  }
 }
 .alert-admin__content {
   pointer-events: unset;
@@ -328,6 +339,9 @@ h1.nombre-sitio span {
   .navegacion-principal a {
     display: inline-block;
   }
+  .contenido-programa .titulo-seccion {
+    padding-left: 100px;
+  }
 }
 main {
   font-size: 7px;
@@ -381,6 +395,9 @@ main {
   height: auto;
 }
 .menu-programa {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   border-bottom: 1px solid #fe4918;
 }
 .menu-programa a {
@@ -958,13 +975,6 @@ div.cbox p {
   .contenedor-video video {
     display: inline;
   }
-  .contenido-programa .titulo-seccion {
-    padding-left: 100px;
-  }
-  .programa-evento {
-    margin: 100px 0 0 0;
-    width: 40%;
-  }
   .resumen-evento {
     height: 400px;
     padding: 0 100px;
@@ -1009,10 +1019,9 @@ div.cbox p {
   main {
     font-size: 12px;
   }
-  .menu-programa {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  .programa-evento {
+    margin: 100px 0 0 0;
+    width: 60%;
   }
   .menu-programa a {
     font-size: 22px;
@@ -1069,6 +1078,9 @@ div.cbox p {
   }
 }
 @media (min-width: 1280px) {
+  .programa-evento {
+    width: 40%;
+  }
   .contenedor-testimoniales {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
