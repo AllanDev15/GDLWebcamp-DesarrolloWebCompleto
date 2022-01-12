@@ -1,5 +1,11 @@
 (function () {
   document.addEventListener('DOMContentLoaded', () => {
+    const alertAdmin = document.querySelector('.alert-admin__toggle-btn');
+    const alertAdminContent = document.querySelector('.alert-admin__content');
+    setTimeout(() => {
+      alertAdminContent.classList.add('fade');
+    }, 7000);
+    alertAdmin.addEventListener('click', (e) => alertAdminContent.classList.toggle('fade'));
     const copyright = document.querySelector('.copyright p');
     copyright.textContent = 'Todos los derechos reservados GDLWEBCAMP ' + new Date().getFullYear();
     function a() {
@@ -75,7 +81,7 @@
     let c = 0;
     $(window).scroll(() => {
       const a = $(window).scrollTop();
-      2800 < a &&
+      2400 < a &&
         3e3 > a &&
         0 == c &&
         ($('.resumen-evento li:nth-child(1) p').animateNumber({ number: 6 }, 1500),

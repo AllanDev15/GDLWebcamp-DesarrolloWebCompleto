@@ -112,4 +112,12 @@ setlocale(LC_ALL, 'es_ES');
         <a href="registro.php">Reservaciones</a>
       </nav>
     </div>
+
+    <div class="alert-admin">
+      <div class="alert-admin__content">
+        <p class="alert-admin__text">Visita el dashborad donde se administra el evento y el contenido de la página</p>
+        <a href="./admin/dashboard.php" target="_blank" class="alert-admin__btn">Visitar</a>
+      </div>
+      <button class="alert-admin__toggle-btn"><i class="fas fa-angle-up"></i></button>
+    </div>
   </div>
