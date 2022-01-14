@@ -2,7 +2,7 @@
 
 ![](./preview.gif)
 
-<a href="https://gdlwebcamp-udemy.herokuapp.com/index.php">
+<a href="https://gdlwebcamp-udemy.herokuapp.com/index.php" target="_blank">
   <img src="https://img.shields.io/badge/Visitar-FE4918?style=for-the-badge">
 </a>
 
@@ -31,7 +31,7 @@ Es el sitio web de un evento de conferencias de diseño web y desarrollo web el 
 Contiene:
 
 - Página principal informativa del evento
-- Galeria de fotos
+- Galería de fotos
 - Agenda del evento
 - Invitados
 - Sección para adquirir los boletos al evento
@@ -47,7 +47,7 @@ Contiene:
 - Dashboard con información general de los registros al evento
 - Secciones para visualizar, crear, editar y borrar:
   - Eventos
-  - Categorias
+  - Categorías
   - Invitados
   - Registrados
   - Administradores
@@ -60,7 +60,7 @@ Contiene:
 
 🔹 Posicionamiento con Flexbox \
 🔹 Transiciones con CSS \
-🔹 Librerias con JQuery \
+🔹 Librerías con JQuery \
 🔹 Interacciones con Javascript \
 🔹 Validación de formularios \
 🔹 Envio de datos al servidor \
